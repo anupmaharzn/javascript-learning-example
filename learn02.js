@@ -111,3 +111,6 @@ const newpropertyname = "b";
 objectwithnestedobject.nestedobject[newpropertyname] = true;
 
 console.log(objectwithnestedobject);
+
+
+//GLOBAL OBJECT : Window for web browser and  global for node.js
