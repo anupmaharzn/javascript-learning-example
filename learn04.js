@@ -132,6 +132,8 @@ console.log(Number(myVariable1) <= Number(myVariable2));
 myVariable1 = 10;
 myVariable2 = 11;
 console.log(myVariable1 % myVariable2);
+
+//short form
 a += 1;
 a *= 3;
 a -= 5;
