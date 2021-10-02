@@ -82,7 +82,6 @@ myanother["new" + "property" + "Name"] = "hello world string concatenation"
 console.log(myanother);
 
 
-
 //missing properties or non existing properties
 
 const mynext = {
