@@ -156,30 +156,30 @@ how to pull out all argumnet form function //argument is object to create array
 
 //First Test Case
 
-const a = 10;
-const b = 5;
+// const a = 10;
+// const b = 5;
 
-function taggedTemplate(arrayofString) {
-  const vals = Array.from(arguments).slice(1);
-  //  console.log(arrayofString);
-  //  console.log(vals);
-  return arrayofString.reduce((concatStr, str, index) => 
-    concatStr + str + (vals[index] !== undefined ? vals[index] : "")
-  , "");
-}
+// function taggedTemplate(arrayofString) {
+//   const vals = Array.from(arguments).slice(1);
+//   //  console.log(arrayofString);
+//   //  console.log(vals);
+//   return arrayofString.reduce((concatStr, str, index) => 
+//     concatStr + str + (vals[index] !== undefined ? vals[index] : "")
+//   , "");
+// }
 
-const sum = taggedTemplate`Sum of the two variables a(${a}) and b(${b}) is ${
-  a + b
-}`;
+// const sum = taggedTemplate`Sum of the two variables a(${a}) and b(${b}) is ${
+//   a + b
+// }`;
 
-console.log(sum);
-/**
- * Sum of the two variable a(10) and b(5) is 15
- */
+// console.log(sum);
+// /**
+//  * Sum of the two variable a(10) and b(5) is 15
+//  */
 
-//second test case
-const girl = "alicee";
-const boy = "Bob";
+// //second test case
+// const girl = "alicee";
+// const boy = "Bob";
 
-const frindsInfo = taggedTemplate`${girl} and ${boy} are friends!`;
-console.log(frindsInfo);
+// const frindsInfo = taggedTemplate`${girl} and ${boy} are friends!`;
+// console.log(frindsInfo);
