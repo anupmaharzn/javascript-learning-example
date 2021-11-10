@@ -145,63 +145,63 @@
  *
  */
 
-const tasks = [
-  {
-    title: "Meeting with John",
-    taskId: 4621,
-  },
-  {
-    title: "Visit gym",
-    taskId: 6821,
-  },
-  {
-    title: "Buy new phone",
-  },
-  {
-    title: "Clean the room",
-    taskId: 2721,
-  },
-  {
-    title: "Plan a trip",
-  },
-];
+// const tasks = [
+//   {
+//     title: "Meeting with John",
+//     taskId: 4621,
+//   },
+//   {
+//     title: "Visit gym",
+//     taskId: 6821,
+//   },
+//   {
+//     title: "Buy new phone",
+//   },
+//   {
+//     title: "Clean the room",
+//     taskId: 2721,
+//   },
+//   {
+//     title: "Plan a trip",
+//   },
+// ];
 
-const generateTaskIds = (tasks) => {
-  let newTaskIds = [];
-  return tasks.map(({ ...task }) => {
-    // or task = {...task}; //aaba mutate hudaina copy of task spread operator
-    if (!task.hasOwnProperty("taskId")) {
-      let newTaskId;
-      do {
-        newTaskId = 1000 + Math.floor(Math.random() * 9000);
-      } while (tasks.find((task) => task.taskId === newTaskId) || newTaskIds.includes(newTaskId));
+// const generateTaskIds = (tasks) => {
+//   let newTaskIds = [];
+//   return tasks.map(({ ...task }) => {
+//     // or task = {...task}; //aaba mutate hudaina copy of task spread operator
+//     if (!task.hasOwnProperty("taskId")) {
+//       let newTaskId;
+//       do {
+//         newTaskId = 1000 + Math.floor(Math.random() * 9000);
+//       } while (tasks.find((task) => task.taskId === newTaskId) || newTaskIds.includes(newTaskId));
 
-      newTaskIds.push(newTaskId);
+//       newTaskIds.push(newTaskId);
 
-      task.taskId = newTaskId;
-    }
-    return task;
-  });
-};
+//       task.taskId = newTaskId;
+//     }
+//     return task;
+//   });
+// };
 
-const tasksSortedByIds = (tasks, tasksWithIds = generateTaskIds(tasks)) => {
-  console.log(
-    `Quantity of the missing taskIds is ${
-      tasks.filter((task) => !task.hasOwnProperty("taskId")).length
-    }`
-  );
-  return tasksWithIds.sort((a, b) => a.taskId - b.taskId);
-};
+// const tasksSortedByIds = (tasks, tasksWithIds = generateTaskIds(tasks)) => {
+//   console.log(
+//     `Quantity of the missing taskIds is ${
+//       tasks.filter((task) => !task.hasOwnProperty("taskId")).length
+//     }`
+//   );
+//   return tasksWithIds.sort((a, b) => a.taskId - b.taskId);
+// };
 
-console.log("Sorted array of task with taskIds:", tasksSortedByIds(tasks));
+// console.log("Sorted array of task with taskIds:", tasksSortedByIds(tasks));
 
-/**
- * Quantity of the missing taskIds is 2
- * Soreted array of tasks with taskIds: .....
- */
+// /**
+//  * Quantity of the missing taskIds is 2
+//  * Soreted array of tasks with taskIds: .....
+//  */
 
-console.log("orginal unsoreted array of tasks with missing taskIds:", tasks);
-/**
- * Original unsoreted array of tasks with missing taksIds: ...
- *
- */
+// console.log("orginal unsoreted array of tasks with missing taskIds:", tasks);
+// /**
+//  * Original unsoreted array of tasks with missing taksIds: ...
+//  *
+//  */
