@@ -156,3 +156,5 @@
 // console.log(meanscore(...scores1,...scores2));
 // console.log(meanscore(...scores1,...scores2,...scores3));
 // console.log(meanscore(...scores4));
+
+
