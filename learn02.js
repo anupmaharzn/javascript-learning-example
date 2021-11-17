@@ -1,114 +1,114 @@
-//object in javascript 
-//access properites of the object
-//add
-const mycity = {
-    city: 'new york'
-};
-mycity.city = 'nepali' //change
-mycity.popular = true; //simply addd in mycity object
+// //object in javascript 
+// //access properites of the object
+// //add
+// const mycity = {
+//     city: 'new york'
+// };
+// mycity.city = 'nepali' //change
+// mycity.popular = true; //simply addd in mycity object
 
-console.log(mycity);
-
-
-mycity.country = "nepal";
-
-console.log(mycity);
-
-//delete 
-
-delete mycity.country;
-
-console.log(mycity);
-
-//access properites of the object using bracket notation
-
-mycity['notpopular'] = 'india';
-
-console.log(mycity);
-
-//kinda using value of other variable as a key name of object
-const countrypropterName = 'country ';
-
-mycity[countrypropterName] = 'pakistan';
-
-console.log(mycity);
+// console.log(mycity);
 
 
-const myCity = {
-    city: "lalitpur",
-    info: {
-        popular: true,
-        country: "nepal"
-    }
-};
+// mycity.country = "nepal";
 
-console.log(myCity.info.popular);
+// console.log(mycity);
 
-delete myCity.info.popular; //or delete myCity.info["popular"];
+// //delete 
 
-console.log(myCity)
+// delete mycity.country;
 
-//practise and challenges
-//great to example for pointer my object and copofmyobject points to same object so same result afther changeing its value
-let myobject = {
-    a: 10,
+// console.log(mycity);
 
-};
+// //access properites of the object using bracket notation
 
-let copyOfMyObject = myobject;
+// mycity['notpopular'] = 'india';
 
-copyOfMyObject.b = false;
+// console.log(mycity);
 
-console.log(myobject);
-console.log(copyOfMyObject);
+// //kinda using value of other variable as a key name of object
+// const countrypropterName = 'country ';
+
+// mycity[countrypropterName] = 'pakistan';
+
+// console.log(mycity);
 
 
-let myanother = {
-    a: true,
-    b: null,
-    c: 25
-};
+// const myCity = {
+//     city: "lalitpur",
+//     info: {
+//         popular: true,
+//         country: "nepal"
+//     }
+// };
 
-console.log(myanother["a"]);
+// console.log(myCity.info.popular);
 
-const propertyName = "c";
+// delete myCity.info.popular; //or delete myCity.info["popular"];
 
-console.log(myanother[propertyName]); //we get 25
+// console.log(myCity)
 
-console.log(myanother["propertyName"]); // undefined auxa coz that key name is missing in the object that we created
+// //practise and challenges
+// //great to example for pointer my object and copofmyobject points to same object so same result afther changeing its value
+// let myobject = {
+//     a: 10,
 
-myanother["new" + "property" + "Name"] = "hello world string concatenation"
+// };
 
-console.log(myanother);
+// let copyOfMyObject = myobject;
 
+// copyOfMyObject.b = false;
 
-//missing properties or non existing properties
-
-const mynext = {
-    a: 3,
-    b: true,
-};
-
-//code exection is not stopped
-console.log(mynext.absentProperty); //result undefined
-
-mynext.newPropertyWithUndefinedValue = undefined;
-console.log(mynext);
-console.log(mynext.newPropertyWithUndefinedValue);
+// console.log(myobject);
+// console.log(copyOfMyObject);
 
 
-//challenge
-let objectwithnestedobject = {};
+// let myanother = {
+//     a: true,
+//     b: null,
+//     c: 25
+// };
 
-objectwithnestedobject.nestedobject = {};
+// console.log(myanother["a"]);
 
-objectwithnestedobject.nestedobject.a = null;
+// const propertyName = "c";
 
-const newpropertyname = "b";
+// console.log(myanother[propertyName]); //we get 25
 
-objectwithnestedobject.nestedobject[newpropertyname] = true;
+// console.log(myanother["propertyName"]); // undefined auxa coz that key name is missing in the object that we created
 
-console.log(objectwithnestedobject);
+// myanother["new" + "property" + "Name"] = "hello world string concatenation"
+
+// console.log(myanother);
 
 
-//GLOBAL OBJECT : Window for web browser and  global for node.js
+// //missing properties or non existing properties
+
+// const mynext = {
+//     a: 3,
+//     b: true,
+// };
+
+// //code exection is not stopped
+// console.log(mynext.absentProperty); //result undefined
+
+// mynext.newPropertyWithUndefinedValue = undefined;
+// console.log(mynext);
+// console.log(mynext.newPropertyWithUndefinedValue);
+
+
+// //challenge
+// let objectwithnestedobject = {};
+
+// objectwithnestedobject.nestedobject = {};
+
+// objectwithnestedobject.nestedobject.a = null;
+
+// const newpropertyname = "b";
+
+// objectwithnestedobject.nestedobject[newpropertyname] = true;
+
+// console.log(objectwithnestedobject);
+
+
+// //GLOBAL OBJECT : Window for web browser and  global for node.js
