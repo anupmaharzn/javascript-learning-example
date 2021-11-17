@@ -267,16 +267,16 @@
 
 
 
-/** ternary opertaion challenge **/
+// /** ternary opertaion challenge **/
 
-//rewrite "if....else" statement with ternary operator
+// //rewrite "if....else" statement with ternary operator
 
-function emptyArray(inputArray) {
+// function emptyArray(inputArray) {
 
-    //inputArray.length > 0 ? console.log("array is not empty") : console.log("array is empty");
-    return inputArray.length > 0 ?
-        "array is not empty" :
-        "array is empty ";
-}
+//     //inputArray.length > 0 ? console.log("array is not empty") : console.log("array is empty");
+//     return inputArray.length > 0 ?
+//         "array is not empty" :
+//         "array is empty ";
+// }
 
-console.log(emptyArray([]));
+// console.log(emptyArray([]));
