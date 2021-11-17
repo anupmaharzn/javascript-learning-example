@@ -97,8 +97,8 @@
 
 //challenge 2 
 
-setTimeout(function myFn() {
-    console.log("hello world");
-}, 2000);
+// setTimeout(function myFn() {
+//     console.log("hello world");
+// }, 2000);
 
-myFn(); //yo function delcare nai vako chaina global scope maa so error auxa
+// myFn(); //yo function delcare nai vako chaina global scope maa so error auxa
