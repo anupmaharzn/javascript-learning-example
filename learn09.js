@@ -476,3 +476,4 @@
 // console.log(res1(20)); 
 // const res2 = outerfn(3);
 // console.log(res2(20)); 
+//
